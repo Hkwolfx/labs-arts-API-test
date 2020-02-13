@@ -16,12 +16,12 @@ body {
 
 img.Homepage__logo {
   position: absolute;
-  top: 56%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.9;
-  width: 610px;
-  height: 600px;
+  width: 25vw;
+  height: 48vh;
   border: 6px solid rgba(28, 110, 164, 0.5);
   border-radius: 364px;
   box-shadow: 0px 2px 22px 5px rgba(0, 0, 0, 0.8), 0 0 58px 38px #fff,
@@ -30,9 +30,10 @@ img.Homepage__logo {
 }
 
 img.Header__logo {
-width:400px;
+width:10vw;
 position: absolute;
-left: 41.5%;
+right: 45vw;
+top: 0vh;
 filter: drop-shadow(0 -2mm 2mm #fffeff);
 }
 
