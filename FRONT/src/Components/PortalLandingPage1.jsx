@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./style.css"
 import logo from "../Layouts/hmgbg.jpeg";
 
 export default function PortalLandingPage1() {

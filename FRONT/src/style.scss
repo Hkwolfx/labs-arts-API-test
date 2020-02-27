@@ -105,3 +105,11 @@ button:hover .overlay {
   opacity: 1;
   transition: 0.5s ease;
 }
+
+.Homepage__Items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:10vh;
+    
+}

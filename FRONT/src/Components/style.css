@@ -1,0 +1,122 @@
+
+
+
+.card {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 200ms ease-out;
+    border-radius: 300px;
+  }
+  
+  .card__img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 300px;
+  }
+  
+  .text {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    z-index: 5;
+  }
+  
+  .card__title {
+    position: relative;
+    margin-bottom: 0;
+  }
+  
+  h3 {
+    padding: 4px 8px 4px 8px;
+    position: relative;
+    font-size: 1.5em;
+    margin: 0;
+    opacity: 0;
+    color: white;
+    text-align: right;
+    transition: opacity 450ms ease-out 750ms;
+  }
+  .small {
+    font-size: 1em;
+    margin-top: 8px;
+  }
+  
+  .card__body {
+    margin: 0.25rem;
+  }
+  
+  .card::before,
+  .card::after {
+    content: "";
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+  }
+  
+  .card::before {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scale(0, 1);
+    transition: transform ease-out 250ms;
+    border-radius: 300px;
+  }
+  
+  .card::after {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    transform: scale(1, 0);
+    transition: transform ease-out 250ms;
+    border-radius: 300px;
+  }
+  
+  .card__title::before {
+    content: "";
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 0;
+    border-radius: 300px;
+  }
+  
+  .red.card__title::before {
+    background: #c10934;
+    transition: max-width 450ms ease-out 500ms;
+  }
+  
+  .dark.card__title::before {
+    background: black;
+    transition: max-width 450ms ease-out 750ms;
+  }
+  
+  .card:hover {
+    height: 410px;
+    width: 410px;
+    box-shadow: 0px 5px 5px 5px lightgray;
+  }
+  
+  .card:hover::before {
+    transform: scale(1, 1);
+  }
+  
+  .card:hover::after {
+    transform: scale(1, 1);
+  }
+  
+  .card:hover .red.card__title::before,
+  .card:hover .dark.card__title::before {
+    max-width: 700px;
+  }
+  
+  .card:hover h3 {
+    opacity: 1;
+  }
+  

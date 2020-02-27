@@ -1,28 +1,15 @@
 import React from "react";
 // import HomepageMiniature from "../Layouts/hmgbg.jpeg";
 import Header from "./Header";
-import PortalLandingPage1 from "./PortalLandingPage1"
+import PortalLandingPage1 from "./PortalLandingPage1";
 
 function LandingPage() {
-
-  const handleClick = () => {
-    console.log("Le lien a été cliqué.");
-    // window.location.href="pagelink" //
-  };
-
   return (
     <div className="Homepage">
       <Header />
       <header className="Homepage__Items">
-        <button>
-          <img
-            src={PortalLandingPage1}
-            className="Homepage__logo"
-            alt=""
-            onClick={handleClick}
-          />
-        </button>
-        <p>
+       <PortalLandingPage1 />
+       <p>
           Edit <code>src/Components/LandingPage</code> and save to reload.
         </p>
         <a
