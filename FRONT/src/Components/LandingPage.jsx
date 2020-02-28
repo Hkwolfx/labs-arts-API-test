@@ -8,18 +8,20 @@ function LandingPage() {
     <div className="Homepage">
       <Header />
       <header className="Homepage__Items">
-       <PortalLandingPage1 />
-       <p>
-          Edit <code>src/Components/LandingPage</code> and save to reload.
-        </p>
-        <a
-          className="Homepage_links"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Our Site Homepage.
-        </a>
+        <PortalLandingPage1 />
+        <div className="Homepage__links">
+          <p className="Homepage__welcome">
+            <strong>Clique sur le portail pour voyager jusqu'aux laboratoires de Labs-Arts !</strong>
+          </p>
+          <a
+            className="Homepage_links"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Bienvenue sur notre site.</strong>
+          </a>
+        </div>
       </header>
     </div>
   );
