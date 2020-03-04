@@ -14,13 +14,13 @@ export default function OurRoutes() {
         <nav>
           <ul>
             <li>
-              <Link to="/"><wired-button>Portail</wired-button></Link>
+              <Link to="/">Portail</Link>
             </li>
             <li>
-              <Link to="/about"><wired-button>Qui sommes-nous ?</wired-button></Link>
+              <Link to="/about">Qui sommes-nous ?</Link>
             </li>
             <li>
-              <Link to="/users"><wired-button>Contactez-nous</wired-button></Link>
+              <Link to="/users">Contactez-nous</Link>
             </li>
           </ul>
         </nav>
