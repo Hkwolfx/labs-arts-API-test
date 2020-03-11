@@ -2,6 +2,11 @@ import React from "react";
 import "./style.css"
 import logo from "../Layouts/hmgbg.jpeg";
 
+
+// POUR RENDRE LE MODULE REDIRECTABLE 
+//  <div onclick="window.location.href = 'http://example.com';">Click this div to get redirected.</div>
+//
+
 export default function PortalLandingPage1() {
   return (
     <div className="card">
